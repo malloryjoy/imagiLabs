@@ -50,6 +50,7 @@ rb = (66,68,84) #rock border
 rc = (157,157,157) #rock center
 ebr = (116, 76, 4) #eagle brown
 bk = (255, 243, 107) #BEAK!!
+red = (255,2,0) #Flag Red
 
 
 #August colors
@@ -57,6 +58,7 @@ g = (0, 159, 39) #tree green
 tr= (102,76,45) #tree trunk
 sn = (255,189,99) #sand
 liblu = (0, 255,253 ) #lightblue
+y = (253,255,0) #yellow
 
 
 #September colors
@@ -643,14 +645,411 @@ def isApril():
 
     plt.show()
 
+def isMay():
+    m = empty_matrix()
+    def cornflower():
+        m[3][3] = aq
+        m[3][4] = aq
+        m[4][3] = aq
+        m[4][4] = aq    
+        m[1][1] = b
+        m[1][2] = b
+        m[1][5] = b
+        m[1][6] = b
+        m[2][1] = b
+        m[2][3] = b
+        m[2][4] = b
+        m[2][6] = b
+        m[3][2] = b
+        m[3][5] = b
+        m[4][2] = b
+        m[4][5] = b
+        m[5][1] = b
+        m[5][3] = b
+        m[5][4] = b
+        m[5][6] = b
+        m[6][1] = b
+        m[6][2] = b
+        m[6][5] = b
+        m[6][6] = b
+    
+    def violet():
+        m[3][3] = gold
+        m[3][4] = gold
+        m[4][3] = gold
+        m[4][4] = gold
+        
+        m[1][1] = rp
+        m[1][2] = rp
+        m[1][5] = rp
+        m[1][6] = rp
+        m[2][1] = rp
+        m[2][3] = rp
+        m[2][4] = rp
+        m[2][6] = rp
+        m[3][2] = rp
+        m[3][5] = rp
+        m[4][2] = rp
+        m[4][5] = rp
+        m[5][1] = rp
+        m[5][3] = rp
+        m[5][4] = rp
+        m[5][6] = rp
+        m[6][1] = rp
+        m[6][2] = rp
+        m[6][5] = rp
+        m[6][6] = rp
+
+    def rose():
+        m[3][3] = hr
+        m[3][4] = hr
+        m[4][3] = hr
+        m[4][4] = hr
+        
+        m[1][1] = bl
+        m[1][2] = bl
+        m[1][5] = bl
+        m[1][6] = bl
+        m[2][1] = bl
+        m[2][3] = bl
+        m[2][4] = bl
+        m[2][6] = bl
+        m[3][2] = bl
+        m[3][5] = bl
+        m[4][2] = bl
+        m[4][5] = bl
+        m[5][1] = bl
+        m[5][3] = bl
+        m[5][4] = bl
+        m[5][6] = bl
+        m[6][1] = bl
+        m[6][2] = bl
+        m[6][5] = bl
+        m[6][6] = bl
+
+
+    def sunflower():
+        m[3][3] = br
+        m[3][4] = br
+        m[4][3] = br
+        m[4][4] = br
+        
+        m[1][1] = gold
+        m[1][2] = gold
+        m[1][5] = gold
+        m[1][6] = gold
+        m[2][1] = gold
+        m[2][3] = gold
+        m[2][4] = gold
+        m[2][6] = gold
+        m[3][2] = gold
+        m[3][5] = gold
+        m[4][2] = gold
+        m[4][5] = gold
+        m[5][1] = gold
+        m[5][3] = gold
+        m[5][4] = gold
+        m[5][6] = gold
+        m[6][1] = gold
+        m[6][2] = gold
+        m[6][5] = gold
+        m[6][6] = gold
+    
+    #Frame 1
+    cornflower() 
+    frames.append(np.array(m))
+
+    #Frame 2
+    violet() 
+    frames.append(np.array(m))
+
+    #Frame 3
+    rose() 
+    frames.append(np.array(m))
+
+    #Frame 4
+    sunflower()
+    frames.append(np.array(m))
+
+        # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=500, blit=True)
+
+    plt.show()
+
+def isJune():
+    m = empty_matrix()
+    
+    def cake():
+        
+        m[1][1] = gold
+        m[1][3] = gold
+        m[1][4] = gold
+        m[1][6] = gold
+        m[2][1] = aq
+        m[3][1] = aq
+        m[2][3] = aq
+        m[3][3] = aq
+        m[2][4] = aq
+        m[3][4] = aq
+        m[2][6] = aq
+        m[3][6] = aq
+        for col in range(1,7):
+            m[4][col] = pn
+            m[7][col] = pn
+            m[6][col] = lp
+        m[5][1] = pn
+        m[5][2] = lp
+        m[5][3] = pn
+        m[5][4] = pn
+        m[5][5] = lp
+        m[5][6] = pn
+    
+    
+    cake()
+
+    frames.append(np.array(m))
+    cake()
+    m[1][1] = gold
+    m[1][3] = gold
+    m[1][4] = gold
+    m[1][6] = black
+
+
+    frames.append(np.array(m))
+    cake()
+    m[1][1] = gold
+    m[1][3] = gold
+    m[1][4] = black
+    m[1][6] = black
+        
+    frames.append(np.array(m))
+    cake()
+    m[1][1] = gold
+    m[1][3] = black
+    m[1][4] = black
+    m[1][6] = black
+        
+    frames.append(np.array(m))
+    cake()
+    m[1][1] = black
+    m[1][3] = black
+    m[1][4] = black
+    m[1][6] = black
+        
+    frames.append(np.array(m))
+    cake()
+    m[1][1] = black
+    m[1][3] = black
+    m[1][4] = black
+    m[1][6] = black
+
+    frames.append(np.array(m))
+
+    # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=200, blit=True)
+
+    plt.show()
+
+def isJuly():
+    m = empty_matrix()
+    def rock():
+        m[0][3] = rb
+        m[0][4] = rb
+        m[1][2] = rb
+        m[1][5] = rb
+        m[2][1] = rb
+        m[2][6] = rb
+        m[3][0] = rb
+        m[3][7] = rb
+        m[4][0] = rb
+        m[4][7] = rb
+        m[5][0] = rb
+        m[5][7] = rb
+        m[6][1] = rb
+        m[6][7] = rb
+        m[0][4] = rb
+        for col in range(2,7):
+            m[7][col] = rb
+        for row in range(3,6):
+            m[row][1] = rc
+        for row in range(2,7):
+            m[row][2] = rc
+        for row in range(1,7):
+            m[row][3] = rc
+        for row in range(1,7):
+            m[row][4] = rc
+        for row in range(2,7):
+            m[row][5] = rc
+        for row in range(3,7):
+            m[row][6] = rc
+        
+
+    def flag():
+        for col in range(0,3):
+            m[0][col] = b
+            m[1][col] = b
+            m[2][col] = b
+        for col in range(3,8):
+            m[0][col] = red
+            m[1][col] = white
+            m[2][col] = red
+        for col in range(0,8):
+            m[3][col] = white
+            m[4][col] = red
+            m[5][col] = white
+            m[6][col] = red
+            m[7][col] = white
+
+    def eagle():
+        m[2][5] = bk
+        m[3][1] = br
+        m[3][6] = br
+        m[4][1] = white
+        m[4][2] = br
+        m[4][5] = br
+        m[4][6] = white
+        m[5][1] = br
+        m[5][6] = br
+        for row in range (2,6):
+            m[row][3] = white
+            m[row][4] = white
+        for col in range (2,6):
+            m[6][col] = br
+        for col in range (3,5):
+            m[7][col] = bk
+        for row in range (3,5):
+            m[row][0] = br
+            m[row][7] = br
+        for col in range (2,6):
+            m[5][col] = white
+    
+    def clear():
+        
+        for row in range(8):
+            for col in range(8):
+                m[row][col] = black   # reset everything to "off"
+
+    rock()
+    frames.append(np.array(m))
+    clear()
+    flag()
+    frames.append(np.array(m))
+    clear()
+    eagle()
+    frames.append(np.array(m))
+
+    # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=500, blit=True)
+
+    plt.show()
+
+def isAugust():
+    m = empty_matrix()
+    def tree():
+        m[1][3] = g
+        m[0][4] = g
+        m[1][5] = g
+        for row in range(1,4):
+            m[row][4] = tr
+    def sand():
+        for col in range(0,4):
+            m[3][col] = sn
+        for col in range(5,8):
+            m[3][col] = sn
+        for col in range(0,8):
+            m[4][col] = sn
+        for col in range(1,3):
+            m[5][col] = sn
+        for col in range(5,7):
+            m[5][col] = sn
+
+    def sea():
+        for row in range(5,7):
+            m[row][0] = b
+            m[row][7] = b
+        for col in range(0,8):
+            m[7][col] = b
+        for col in range(1,7):
+            m[6][col] = aq
+        for col in range(3,5):
+            m[5][col] = aq
+
+    m[0][0] = y
+
+
+    tree()
+    sand()
+    sea()
+
+    frames.append(np.array(m))
+    m[5][1] = aq
+    m[5][2] = aq
+    m[5][5] = aq
+    m[5][6] = aq
+    m[5][3] = sn
+    m[5][4] = sn
+
+    frames.append(np.array(m))
+    m[4][1] = aq
+    m[5][2] = aq
+    m[4][6] = aq
+    m[5][5] = aq
+
+    frames.append(np.array(m))
+
+    # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=200, blit=True)
+
+    plt.show()
+
+
+
+
+
 #isJanuary()
 #isFebruary()
 #isMarch()
-isApril()
+#isApril()
 #isMay()
 #isJune()
 #isJuly()
-#isAugust()
+isAugust()
 #isSeptember()
 #isOctober()
 #isNovember()
