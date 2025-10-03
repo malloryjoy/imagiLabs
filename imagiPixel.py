@@ -1038,7 +1038,354 @@ def isAugust():
 
     plt.show()
 
+def isSeptember():
+    m = empty_matrix()
+    def gazebo():
+        for row in range(2,7):
+            m[1][row]= ol
+        for row in range(2,7):
+            m[2][row] = choc
+        for col in range(3,6):
+            m[col][2] = white
+        for col in range(3,6):
+            m[col][4] = white
+        for col in range(3,6):
+            m[col][6] = white
+        for row in range(2,7):
+            m[6][row] = br
+        for row in range(1,8):
+            m[7][row] = br
+        m[2][1] = ol
+        m[2][7] = ol
+        m[6][0] = si
+        m[6][1] = si
+        m[6][7] = si
+        m[7][0] = si
+    frames.append(np.array(m))
+    gazebo()
+    
+    m[0][0] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[1][1] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[2][2] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[3][3] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[2][4] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[1][3] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[2][2] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[3][3] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[4][4] =lf
+    frames.append(np.array(m))
+    m = empty_matrix()
+    gazebo()
+    m[5][5]  = lf
+    frames.append(np.array(m))
 
+
+    # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=200, blit=True)
+
+    plt.show()
+
+def isOctber():
+    m = empty_matrix()
+    def pumpkin():
+        for col in range(0,3):
+            m[1][col]= pb
+        for col in range(5,8):
+            m[1][col] = pb
+        for row in range(2,7):
+            m[row][0] = pb
+        for row in range(2,7):
+            m[row][7] = pb
+        for col in range(2,6):
+            m[2][col]= pb
+        for col in range(1,7):
+            m[7][col] = pb
+        for row in range(0,2):
+            m[row][4] = st
+            m[0][5] = st
+        for row in range(2,7):
+            m[row][1] = pmpk
+            m[row][6] = pmpk
+        for col in range(1,7):
+            m[3][col] = pmpk
+            m[4][col] = pmpk
+            m[5][col] = pmpk
+            m[6][col] = pmpk
+
+    def face1():
+        m[3][2] = black
+        m[3][5] = black
+        m[5][1] = black
+        m[5][6] = black
+        for col in range(2,6):
+            m[6][col] = black
+
+    def face2():
+        m[3][2] = black
+        m[3][5] = black
+        for col in range(3,5):
+            m[5][col] = black
+            m[6][col] = black
+    def face3():
+        m[3][1] = black
+        m[3][6] = black
+        m[4][2] = black
+        m[4][5] = black
+        for col in range(2,6):
+            m[6][col] = black
+    frames.append(np.array(m))
+    pumpkin()
+    frames.append(np.array(m))
+    pumpkin()
+    face1()
+    frames.append(np.array(m))
+    pumpkin()
+    face2()
+    frames.append(np.array(m))
+    pumpkin()
+    face3()
+    frames.append(np.array(m))
+
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=400, blit=True)
+
+    plt.show()
+
+def isNovember():
+    m = empty_matrix()
+    def bowl():
+        for col in range(0,8):
+            m[5][col] = bwl
+        for col in range(1,7):
+            m[6][col] = bwl
+        for col in range(2,6):
+            m[7][col] = bwl
+
+    def cranberry():
+        for col in range(1,7):
+            m[4][col] = cran
+            m[3][col] = cran
+        m[2][3] = cran
+        m[2][4] = cran
+
+    def mashedpotatoes():
+        for col in range(1,7):
+            m[4][col] = white
+            m[3][col] = white
+        m[2][3] = white
+        m[2][4] = white
+   
+
+    def turkey():
+        for col in range(3,6):
+            m[4][col] = trk
+        for col in range(2,7):
+            m[5][col] = trk
+        for col in range(1,4):
+            m[6][col] = trk
+            m[7][col] = trk
+        for col in range(4,6):
+            m[6][col] = ds
+        for col in range(4,8):
+            m[7][col] = ds
+            
+        m[5][7] = ds
+        m[6][6] = trk
+
+    def heart():
+        for col in range(1,3):
+            m[1][col] = hb
+        for col in range(5,7):
+            m[1][col] = hb
+        for col in range(3,5):
+            m[2][col] = hb
+        for col in range(3,5):
+            m[7][col] = hb
+        for row in range(2,5):
+            m[row][0] = hb
+            m[row][7] = hb
+        for row in range(2,5):
+            m[row][1] = hc
+        for row in range(2,6):
+            m[row][2] = hc
+        for row in range(3,7):
+            m[row][3] = hc
+        for row in range(3,7):
+            m[row][4] = hc
+        for row in range(2,6):
+            m[row][5] = hc
+        for row in range(2,5):
+            m[row][6] = hc
+        m[5][1] = hb
+        m[5][6] = hb
+        m[6][2] = hb
+        m[6][5] = hb
+
+
+    frames.append(np.array(m))
+    bowl()
+    cranberry()
+    frames.append(np.array(m))
+
+    bowl()
+    mashedpotatoes()
+    frames.append(np.array(m))
+
+    m = empty_matrix()
+    turkey()
+    frames.append(np.array(m))
+
+    m = empty_matrix()
+    heart()
+    frames.append(np.array(m))
+
+    # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=400, blit=True)
+
+    plt.show()
+
+def isDecember():
+    m = empty_matrix()
+    def tree():
+        for col in range(3,5):
+            m[7][col] = tt
+            m[6][col] = tt
+        for col in range(0,3):
+            m[6][col] = xtb
+        for col in range(5,7):
+            m[6][col] = xtb
+        for col in range(0,8):
+            m[5][col] = xtb
+        for col in range(1,7):
+            m[4][col] = xtb
+        for col in range(2,6):
+            m[3][col] = xtb
+        for col in range(3,5):
+            m[2][col] = xtb
+        for col in range(3,5):
+            m[1][col] = xst
+        m[2][3] = liblu
+        m[3][5] = liblu
+        m[4][3] = liblu
+        m[5][1] = liblu
+        m[5][5] = liblu
+        m[6][7] = liblu
+
+    def dreidel():
+        for col in range(3,5):
+            m[0][col] = hy
+            m[1][col] = hy
+        for col in range(1,7):
+            m[2][col] = hdb
+            m[3][col] = hdb
+            m[4][col] = hdb
+            m[5][col] = hdb
+        for col in range(2,6):
+            m[6][col] = hdb
+        for col in range(3,5):
+            m[7][col] = hdb
+        for col in range(3,5):
+            m[3][col] = hy
+        for row in range(3,6):
+            m[row][5] = hy
+        m[5][3] = hy
+        
+    def santa():
+        for col in range(1,7):
+            m[7][col] = xsw
+        for col in range(2,6):
+            m[6][col] = xsr
+            m[5][col] = xsr
+        for row in range(2,5):
+            m[row][3] = xsr
+            m[row][4] = xsr
+        for col in range(4,6):
+            m[1][col] = xsr
+        m[2][6] = xsr
+        m[3][6] = xsw
+
+    def pole():
+        for row in range(1,8):
+            m[row][3] = fp
+
+
+
+    tree()
+    frames.append(np.array(m))
+    m = empty_matrix()
+    dreidel()
+    frames.append(np.array(m))
+    m = empty_matrix()
+    santa()
+    frames.append(np.array(m))
+    m = empty_matrix()
+    pole()
+
+    frames.append(np.array(m))
+
+    # --- Set up the figure for animation ---
+    fig, ax = plt.subplots()
+    im = ax.imshow(frames[0], interpolation='none')
+    ax.axis('off')  # hide axes
+
+    def update(frame):
+        im.set_data(frame)
+        return [im]
+
+        # Create animation
+    ani = animation.FuncAnimation(fig, update, frames=frames, interval=600, blit=True)
+
+    plt.show()
 
 
 
@@ -1049,10 +1396,10 @@ def isAugust():
 #isMay()
 #isJune()
 #isJuly()
-isAugust()
+#isAugust()
 #isSeptember()
-#isOctober()
+#isOctber()
 #isNovember()
-#isDecember()
+isDecember()
 
 
