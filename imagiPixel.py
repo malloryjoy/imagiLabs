@@ -1118,7 +1118,7 @@ def isSeptember():
 
     plt.show()
 
-def isOctber():
+def isOctober():
     m = empty_matrix()
     def pumpkin():
         for col in range(0,3):
@@ -1387,7 +1387,32 @@ def isDecember():
 
     plt.show()
 
-
+if current_month == 1:
+    isJanuary()
+elif current_month == 2: 
+    isFebruary()
+elif current_month == 3: 
+    isMarch()
+elif current_month == 4: 
+    isApril()
+elif current_month == 5:
+    isMay()
+elif current_month == 6: 
+    isJune()
+elif current_month == 7:
+    isJuly()
+elif current_month == 8:
+    isAugust()
+elif current_month == 9:
+    isSeptember()
+elif current_month == 10:
+    isOctober()
+elif current_month == 11:
+    isNovember()
+elif current_month == 12:
+    isDecember()
+else:
+    m = empty_matrix
 
 #isJanuary()
 #isFebruary()
@@ -1398,8 +1423,8 @@ def isDecember():
 #isJuly()
 #isAugust()
 #isSeptember()
-#isOctber()
+#isOctober()
 #isNovember()
-isDecember()
+#isDecember()
 
 
