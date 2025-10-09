@@ -179,6 +179,7 @@ Project Link: [GitHub](https://github.com/malloryjoy/imagiLabs)
 [Python.py]: https://img.shields.io/badge/Python-ff00f7?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
 [Javascript.js]: https://img.shields.io/badge/Javascript-4501fe?style=for-the-badge&logo=javascript&logoColor=white
+[Javascript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 [HTML.io]: https://img.shields.io/badge/HTML5-ff00f7?style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
 [CSS.io]: https://img.shields.io/badge/Tailwind_CSS-4501fe?style=for-the-badge&logo=tailwindcss&logoColor=white
