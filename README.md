@@ -108,19 +108,19 @@ This project was created to be used with an ImagiLabs Pixel Charm Keychain.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] January: Happy New Year! An exploding firework.
-- [ ] February: Love is in the air! A blooming heart (like "The Powerpuff Girls!")
-- [ ] March: Feeling lucky? Enjoy a four-leaf clover! 
-- [ ] April: Showers to bring the flowers! An umbrella with raindrops 
-- [ ] May: Dance around the maypole! Streamers that flash with different colors. 
-- [ ] June: Creator's birthday! A birthday cake with candles.
-- [ ] July: Stars and stripes to celebrate America's birthday. 
-- [ ] August: A bouncing beach ball!
-- [ ] September: A maple leaf, changing colors with the season. 
-- [ ] October: Feeling spooky? A jack-o-lantern for Halloween!
-- [ ] November: Pass the cranberry sauce, we're having mashed potatoes! An assortment of Thanksgiving dinner items.
-- [ ] December: Happy Festivus! A dancing Santa hat.
-- [ ] Creating a landing page for displaying each icon. 
+- [x] January: Happy New Year! An exploding firework.
+- [x] February: Love is in the air! A blooming heart (like "The Powerpuff Girls!")
+- [x] March: Feeling lucky? Enjoy a four-leaf clover! 
+- [x] April: Showers to bring the flowers! An umbrella with raindrops 
+- [x] May: Let's see those flowers! 
+- [x] June: Creator's birthday! A birthday cake with candles.
+- [x] July: Stars and stripes to celebrate America's birthday. 
+- [x] August: Surf's up!
+- [x] September: A maple leaf, changing colors with the season. 
+- [x] October: Feeling spooky? A jack-o-lantern for Halloween!
+- [x] November: Pass the cranberry sauce, we're having mashed potatoes! An assortment of Thanksgiving dinner items.
+- [x] December: Happy Festivus! A Santa hat, among others.
+- [x] Creating a landing page for displaying each icon. 
  
 
 
