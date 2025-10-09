@@ -1,4 +1,5 @@
 /*! tailwindcss v4.1.14 | MIT License | https://tailwindcss.com */
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Pacifico&family=Silkscreen:wght@400;700&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -8,12 +9,25 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-purple-600: oklch(55.8% 0.288 302.321);
+    --color-purple-700: oklch(49.6% 0.265 301.924);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
-    --spacing: 4em;
+    --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --radius-md: 0.375rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-silkscreen: "Silkscreen", sans-serif;
+    --font-pixel: "Bitcount Prop Single Ink", sans-serif;
+    --font-cutesy: "Pacifico", cursive;
   }
 }
 @layer base {
@@ -93,7 +107,7 @@
   }
   img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
-    /*vertical-align: middle; */
+    vertical-align: middle;
   }
   img, video {
     max-width: 100%;
@@ -165,34 +179,114 @@
   }
 }
 @layer utilities {
-  .m-12 {
-    margin: calc(var(--spacing) * 12);
+  .mx-52 {
+    margin-inline: calc(var(--spacing) * 52);
   }
-  .mx-24 {
-    margin-inline: calc(var(--spacing) * 24);
+  .my-32 {
+    margin-block: calc(var(--spacing) * 32);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
   .grid {
     display: grid;
+  }
+  .h-3 {
+    height: calc(var(--spacing) * 3);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-13 {
+    height: calc(var(--spacing) * 13);
+  }
+  .h-48 {
+    height: calc(var(--spacing) * 48);
+  }
+  .w-64 {
+    width: calc(var(--spacing) * 64);
+  }
+  .w-180 {
+    width: calc(var(--spacing) * 180);
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  .rounded-md {
+    border-radius: var(--radius-md);
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-\[\#394e9a\] {
-    background-color: #394e9a;
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
   }
-  .bg-blue-700 {
-    background-color: var(--color-blue-700);
+  .bg-\[\#4501fe\] {
+    background-color: #4501fe;
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .px-\[4\.5rem\] {
+    padding-inline: 4.5rem;
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-5 {
+    padding-block: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
+  }
+  .font-cutesy {
+    font-family: var(--font-cutesy);
+  }
+  .font-pixel {
+    font-family: var(--font-pixel);
+  }
+  .font-silkscreen {
+    font-family: var(--font-silkscreen);
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-\[\#4501fe\] {
+    color: #4501fe;
+  }
+  .text-purple-600 {
+    color: var(--color-purple-600);
+  }
+  .text-purple-700 {
+    color: var(--color-purple-700);
+  }
+}
+@layer components {
+  a {
+    color: #4501fe;
+    text-decoration: underline;
   }
 }
 @property --tw-border-style {

@@ -1,1 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Pacifico&family=Silkscreen:wght@400;700&display=swap");
 @import "tailwindcss";
+
+
+@theme {
+    --font-silkscreen: "Silkscreen", sans-serif; 
+    --font-techie:"BBH Sans Bartle", sans-serif;
+    --font-pixel: "Bitcount Prop Single Ink", sans-serif;
+    --font-cutesy: "Pacifico", cursive;
+  }
+
+  @layer components {
+    a{
+        color: #4501fe;
+        text-decoration:underline;
+    }
+  }
