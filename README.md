@@ -86,7 +86,10 @@ This project contains a compilation of 12 Python functions, which execute an ani
 ### Built With
 
 * [![Python][Python.py]][Python-url]
+* [![Javascript][Javascript.js]][Javascript-url]
+* [![HTML][HTML.io]][html-url]
 * [![CSS][CSS.io]][CSS-url]
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -173,10 +176,11 @@ Project Link: [GitHub](https://github.com/malloryjoy/imagiLabs)
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/malloryjoy/
 [product-screenshot]: screenshot.png
-[Python.py]: https://img.shields.io/badge/Python-grey?logo=python
+[Python.py]: https://img.shields.io/badge/Python-ff00f7?style=for-the-badge&logo=python&logoColor=white
 [Python-url]: https://www.python.org/
-[HTML.io]: https://img.shields.io/badge/HTML-1f75fe
+[Javascript.js]: https://img.shields.io/badge/Javascript-4501fe?style=for-the-badge&logo=javascript&logoColor=white
+[HTML.io]: https://img.shields.io/badge/HTML5-ff00f7?style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
-[CSS.io]: https://img.shields.io/badge/CSS-991ae8?style=for-the-badge&logo=CSS&logoColor=white
-[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[CSS.io]: https://img.shields.io/badge/Tailwind_CSS-4501fe?style=for-the-badge&logo=tailwindcss&logoColor=white
+[CSS-url]: https://tailwindcss.com/docs/installation/tailwind-cli
 
