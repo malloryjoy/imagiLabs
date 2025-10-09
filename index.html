@@ -16,25 +16,37 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
       </head> 
       <body class="bg-[#4501fe]"> 
-        <div class="mx-52 my-32 px-[4.5rem] py-5 bg-white"> 
+        <div class="mx-10 my-12 px-[2rem] py-2 md:px-[4.5rem] md:py-5 md:mx-32 md:my-28 bg-white"> 
           <h1 class="text-center text-4xl font-silkscreen text-purple-600">Imagi Charms </h1> 
           <h3 class="text-center mt-4 text-2xl font-cutesy">Designs by the Month</h3>
           <div class="h-13"></div>
-          <h2 class="text-left text-3xl py-3 font-pixel">The concept</h2>
+          <h4 class="text-center mt-4 text-xl font-nav text-purple-600"><a class="text-[#ff00ff]" href="#intro">The Concept</a> | <a class="text-[#ff00ff]" href="#thenextlevel">The Next Level</a> | <a class="text-[#ff00ff]" href="#imagePlans">The Imagery</a> | <a class="text-[#ff00ff]" href="#theplan">The Execution</a> | <a class="text-[#ff00ff]" href="#thecode">The Code</a> | <a class="text-[#ff00ff]" href="#thegallery">The Gallery</a> | <a class="text-[#ff00ff]" href="#theend">The Conclusion</a></h4> 
+          <div class="h-13"></div>
+          <section id="intro">
+          <h2 class="text-left text-3xl py-3 font-pixel">The Concept</h2>
           <p>Imagi Labs is a fun, modern brand that invites future STEMMERS a chance to learn basic code concepts in a fun, playful environment.
             While the standard issue runs through a variety of programs from computer lab courses to  in-classroom education, Imagi Labs has invented a 
           stylish format to learn basic Python while creating a work of art! </p>
-          <div class="h-3"></div>
+
+        <div class="h-3"></div>
+        </section>
+        <div class="h-3"></div>
           <p>Using the Imagi Labs <b>Imagi Charm</b>, along with its corresponding <b><a class="text-[#4501fe]" href="https://apps.apple.com/us/app/imagi-fun-coding-game/id1434239482" aria-label="imagi charm app (opens in a new tab)">App</a></b>, users can use Python
           matrices to create 8 by 8 pixelated animations that display on the screen of their Imagi Charm keychain. Using the App's social media capabilities, users can share their Designs
         and support their fellow creators as they go! </p>
         <div class="h-3"></div>
+
+        <div class="h-3"></div>
+        <section id="thenextlevel">
         <h2 class="text-left text-3xl py-3 font-pixel">The Next Level</h2>
         <p>In getting familiarized with the app's functions, translating their real-life applications of Python in a somewhat 
           re-invented way, I had a fun idea: what if I could create a Python application that generated a new charm image 
           depending on the month? This app focused on getting down the basics, but it didn't involve much by way of the standard
         day-to-day functionalities of Python. Adding an if-elif-else function to the mix? Jackpot!</p>
         <div class="h-3"></div>
+      </section>
+      <div class="h-3"></div>
+      <section id="imagePlans">
         <h2 class="text-left text-3xl py-3 font-pixel">The Imagery</h2>
         <p>I started by developing basic concepts for each month. Holidays and seasonal motifs made this part easy!</p>
         <div id="monthDesigns">
@@ -45,10 +57,10 @@
                   <li><b>April</b> - April showers...</li>
                   <li><b>May</b> - ... bring May flowers!</li>
                   <li><b>June</b> - My birthday!</li>
-                  <li><b>July</b> - Independence Day in the USA</li>
-                  <li><b>August</b> - The last days of summer</li>
-                  <li><b>September</b> - The first day of Autumn</li>
-                  <li><b>October</b> - Halloween</li>
+                  <li><b>July</b> - Independence Day in the USA.</li>
+                  <li><b>August</b> - The last days of summer.</li>
+                  <li><b>September</b> - The first day of Autumn!</li>
+                  <li><b>October</b> - Halloweeeeen!</li>
                   <li><b>November</b> - Thanksgiving</li>
                   <li><b>December</b> - All the holidays!</li>
                   
@@ -68,7 +80,7 @@
               <li><b>July</b> - American iconography, on a loop</li>
               <li><b>August</b> - A summer scene - splashing waves?</li>
               <li><b>September</b> - Falling leaves... perhaps a single, whimsically falling leaf.</li>
-              <li><b>October</b> - The many faces of a Jack o'Lantern</li>
+              <li><b>October</b> - The many faces of a Jack o'Lantern!</li>
               <li><b>November</b> - A Thanksgiving loop of the classic feast accoutrements.</li>
               <li><b>December</b> - A final loop of the best the holiday season has to offer.</li>
               
@@ -96,6 +108,10 @@
             </div>
             <div class="h-3"></div>
           <p>Oh, yeah. That's the vibes!</p>
+          <div class="h-3"></div>
+        </section>
+        <div class="h-3"></div>
+        <section id="theplan">
           <div class="h-10"></div>
           <h2 class="text-left text-3xl py-3 font-pixel">The Execution</h2>
           <p>From there, I created my imagery, using Imagi's IDE. Once published in the app, I saved the code for each one to convert to standard Python!</p>
@@ -106,8 +122,10 @@
             the current month. If the variable matches the same numbered month of the year, run the function that displays the 
           corresponding month's imagery. If January, light those fireworks. If it's June, let's see the birthday cake! Halloween? Jack O'Lanterns galore.</p>
           <div class="h-10"></div>
+          </section>
+          <section id="thecode">
           <h2 class="text-left text-3xl py-3 font-pixel">The Code</h2>
-          <div class="w-180 h-48 bg-gray-100 p-4 overflow-y-auto border border-gray-300 rounded-md">
+          <div class="w-80 h-64 md:w-120 md:h-48 bg-gray-100 px-1 md:p-4 overflow-y-auto border border-gray-300 rounded-md">
           <pre><code>
 from datetime import datetime
 import numpy as np
@@ -1525,17 +1543,73 @@ elif current_month == 12:
 else:
     m = empty_matrix 
  </code></pre></div>
+ </section>
           <div class="h-10"></div>
+        <section id="thegallery">
           <h2 class="text-left text-3xl py-3 font-pixel">The Gallery</h2>
-          <h4 class="text-purple-700">January</h4>
-          <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/VssHfbUBtkUYU1dCc6" width="20%" height="20%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/VssHfbUBtkUYU1dCc6">via GIPHY</a></p>
+          <div class="grid grid-cols-3 gap-4 md:grid-cols-4 lg:grid-cols-6">
+            <div>
+              <h4 class="text-purple-700 text-center">January</h4>
+              <img src="/january.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">February</h4>
+              <img src="/february.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">March</h4>
+              <img src="/march.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">April</h4>
+              <img src="/april.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">May</h4>
+              <img src="/may.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">June</h4>
+              <img src="/june.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">July</h4>
+              <img src="/july.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">August</h4>
+              <img src="/august.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">September</h4>
+              <img src="/september.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">October</h4>
+              <img src="/october.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">November</h4>
+              <img src="/november.gif">
+            </div>
+            <div>
+              <h4 class="text-purple-700 text-center">December</h4>
+              <img src="/december.gif">
+            </div>
+          </div>
+          
+          
           <div class="h-10"></div>
+        </section>
+        <div class="h-3"></div>
+        <section id="theend">
           <h2 class="text-left text-3xl py-3 font-pixel">The Conclusion</h2>
           <div class="h-3"></div>
-          <p>The Keychain has its' limitations. Unfortunately, there's no way to implement that if/else function; if you want to 
+          <p>The Keychain has its limitations. Unfortunately, there's no way to implement that if/else function; if you want to 
             change the image that displays on your keychain, you have to do so manually through the App's Bluetooth feature. Still, 
           this project was a great way to see a Python application in real time, and with a creative, personal twist!</p>
-
+        </section>
+      
 
       </body> 
       </html>
